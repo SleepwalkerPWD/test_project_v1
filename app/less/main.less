@@ -1,12 +1,13 @@
-@backgrondColor: #41eca6;
+@backgrondColor: #D5E9ED;
+@mainColor: #087de1;
 
 body {
     background-color: @backgrondColor;
-    color: #e9e9f0;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 20px;
 }
 
-h1 {
-    font-size: 32px;
-    color : #FFF000;
-}
+@import "blocks/_profile.less";
+@import "blocks/_stats.less";
+@import "blocks/_tweet-card.less";
+@import "blocks/_footer.less";

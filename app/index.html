@@ -1,13 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <link rel="stylesheet" href="css/main.css">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Твиттер - Гэндальф</title>
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
+
 <body>
-    <h1>Тестовый проект</h1>
+    <div class="container">
+        <div class="row">
+            <!--left column -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="profile-background"></div>
+                    <div class="profile-avatar">
+                        <img src="img/gandalf3.jpg" alt="Gandalf gray">
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="profile-title">Гэндальф Серый</h2>
+                        <div class="profile-desctiption">
+                            <p>Очищаю средиземье от всякого зла.</p>
+                        </div>
+
+                        <ul class="stats">
+                            <li class="stats-item">
+                                <b class="stats-title">Твиты</b>
+                                <b class="stats-count">90</b>
+                            </li>
+                            <!-- <li class="stats-item">
+                                <b class="stats-title">Лайки</b>
+                                <b class="stats-count">300</b>
+                            </li>
+                            <li class="stats-item">
+                                <b class="stats-title">Репосты</b>
+                                <b class="stats-count">101</b>
+                            </li> -->
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--right column -->
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Твитнуть</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div class="card tweet-card tweet-card-rounded-top">
+                    <div class="h4 mb-0">
+                        Твиты пользователя
+                    </div>
+                </div>
+                    <!-- Single Tweet -->
+                    <div class="card tweet-card">
+                        <div class="tweet-date">14 янв. 3019 г.</div>
+                        <div class="tweet-text font-size-normal">
+                            <p>Входим в Морию, подбираем пароль.</p>
+                        </div>
+                    </div>
+
+                    <div class="card tweet-card">
+                        <div class="tweet-date">12 янв. 3019 г.</div>
+                        <div class="tweet-text font-size-small">
+                            <p>Попытались пройти через горы, попали в Снежную Бурю на Карадрасе</p>
+                        </div>
+                    </div>
+
+                    <div class="card tweet-card">
+                        <div class="tweet-date">25 дек. 3018 г.</div>
+                        <div class="tweet-text font-size-large">
+                            <p>Отряд Хранителей покидает Имладрис</p>
+                        </div>
+                    </div>
+
+                    <div class="card tweet-card font-size-normal">
+                        <div class="tweet-date">25 окт. 3018 г.</div>
+                        <div class="tweet-text">
+                            <p>Совет у Элронда.</p>
+                        </div>
+                    </div>
+
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <p class="footer-copyright">
+                        Николай Добрыднев 2018<br/>
+                        Сверстано с <i class="fa fa-heart"></i> в
+                        <a href="http://webcademy.ru/" class="footer-link" target="_blank">WebCademy.ru</a> в 2018 году
+                    </br/>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
