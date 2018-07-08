@@ -10,6 +10,7 @@ gulp.task('server', ['less'], function() {
     });
     gulp.watch('app/**/*.html').on('change', browserSync.reload);
     gulp.watch('app/less**/*.less', ['less']);
+    gulp.watch('app/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task ('less', function() {
