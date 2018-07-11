@@ -41,7 +41,7 @@ $(document).ready(function() {
     var createTweet = function(date, text) {
         var $tweetBox = $('<div class="card tweet-card">'); //Создаем обертку для твита
         var $tweetDate = $('<div class="tweet-date">').text(date); //Создаем дату
-        var $tweetText = $('<div class="tweet-text">').html(wrapURLs(text)).wrapInner('<p></p>'); //Создаем контет с Твитом
+        var $tweetText = $('<div class="tweet-text">').html(wrapURLs(text)).wrapInner('<p></p>'); //Создаем контент с Твитом
 
 
         var additionalClassName;
@@ -69,7 +69,7 @@ $(document).ready(function() {
         {
             date: '25 дек. 2017 г.',
             text: 'Отряд Хранителей покидает Имладрис'
-            
+
         },
         {
             date: '12 апр. 2018 г.',
