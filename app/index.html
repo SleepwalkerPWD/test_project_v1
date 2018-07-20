@@ -37,7 +37,7 @@
                         <ul class="stats">
                             <li class="stats-item">
                                 <b class="stats-title">Твиты</b>
-                                <b class="stats-count">90</b>
+                                <b class="stats-count" id="tweetCounter"></b>
                             </li>
                             <!-- <li class="stats-item">
                                 <b class="stats-title">Лайки</b>
@@ -59,10 +59,10 @@
             <div class="col-md-8">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <form>
+                        <form id="postNewTweet">
                             <div class="form-group">
 
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+                                <input type="text" id="tweetText" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Твитнуть</button>
@@ -73,48 +73,49 @@
                 </div>
 
 
-                <div class="card tweet-card tweet-card-rounded-top">
+                <div class="card card-title-only tweet-card-rounded-top">
                     <div class="h4 mb-0">
                         Твиты пользователя
                     </div>
                 </div>
+
+                <div id="tweetsList">
                     <!-- Single Tweet -->
-                    <div class="card tweet-card">
-                        <div class="tweet-date">14 янв. 3019 г.</div>
+                    <!-- <div class="card tweet-card">
+                        <div class="tweet-date">14 июнь 2018 г.</div>
                         <div class="tweet-text font-size-normal">
                             <p>Входим в Морию, подбираем пароль.</p>
                         </div>
                     </div>
 
                     <div class="card tweet-card">
-                        <div class="tweet-date">12 янв. 3019 г.</div>
+                        <div class="tweet-date">12 апр. 2018 г.</div>
                         <div class="tweet-text font-size-small">
                             <p>Попытались пройти через горы, попали в Снежную Бурю на Карадрасе</p>
                         </div>
                     </div>
 
                     <div class="card tweet-card">
-                        <div class="tweet-date">25 дек. 3018 г.</div>
+                        <div class="tweet-date">25 дек. 2017 г.</div>
                         <div class="tweet-text font-size-large">
                             <p>Отряд Хранителей покидает Имладрис</p>
                         </div>
                     </div>
 
-                    <div class="card tweet-card font-size-normal">
-                        <div class="tweet-date">25 окт. 3018 г.</div>
-                        <div class="tweet-text">
+                    <div class="card tweet-card">
+                        <div class="tweet-date">25 окт. 2017 г.</div>
+                        <div class="tweet-text font-size-normal">
                             <p>Совет у Элронда.</p>
                         </div>
-                    </div>
-
+                    </div> -->
+                </div>
 
                 <!-- Footer -->
                 <footer class="footer">
                     <p class="footer-copyright">
-                        Николай Добрыднев 2018<br/>
-                        Сверстано с <i class="fa fa-heart"></i> в
+                        Николай Добрыднев 2018<br/> Сверстано с <i class="fa fa-heart"></i> в
                         <a href="http://webcademy.ru/" class="footer-link" target="_blank">WebCademy.ru</a> в 2018 году
-                    </br/>
+                        </br/>
                     </p>
                 </footer>
             </div>
@@ -122,8 +123,11 @@
     </div>
 
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js">
+    </script>
 </body>
 
 </html>
